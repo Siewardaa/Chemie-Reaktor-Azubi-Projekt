@@ -1,12 +1,12 @@
 from flask import Flask
 from flask import render_template
-import RPi.GPIO as rpi
+#import RPi.GPIO as rpi
 import time
 
 app= Flask(__name__)
 
 
-rpi.setwarnings(False)
+#rpi.setwarnings(False)
 
 print("Done")
 
@@ -36,4 +36,4 @@ def Blau():
 
 if __name__=="__main__":
     print("Start")
-    app.run(debug=True, host='192.168.4.1')
+    app.run(debug=True) #,host='192.168.4.1')
