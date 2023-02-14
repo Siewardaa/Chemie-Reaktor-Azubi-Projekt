@@ -1,0 +1,13 @@
+/* beispiel_ls3_02.html - Eine formatierte "Hallo-Welt Web-Seite" in den Sprache HTML und CSS
+    Name, Organisaion:          Markus Breuer, BK-GuT
+    Erstellt, Letzte Änderung:  28.01.2021, 19.01.2023
+*/
+
+body {
+    max-width: 50em;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 10px auto;
+}

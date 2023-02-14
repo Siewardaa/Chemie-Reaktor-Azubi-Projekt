@@ -1,12 +1,25 @@
+
 from flask import Flask
 from flask import render_template
+<<<<<<< HEAD
 #import RPi.GPIO as rpi
+=======
+import RPi.GPIO as GPIO
+>>>>>>> cd1b053 (Test LED und Loadingsite)
 import time
+
+
 
 app= Flask(__name__)
 
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(35,GPIO.OUT)
 
+<<<<<<< HEAD
 #rpi.setwarnings(False)
+=======
+GPIO.setwarnings(False)
+>>>>>>> cd1b053 (Test LED und Loadingsite)
 
 print("Done")
 
@@ -17,11 +30,13 @@ def index():
 @app.route('/B1')
 def Rot():
     print("B1")
-    return render_template('webpage.html')
+    GPIO.output(35,True)
+    return render_template('loadingsite.html')
 
 @app.route('/B2')
 def Gelb():
     print("B2")
+    GPIO.output(35,False)
     return render_template('webpage.html')
 
 @app.route('/B3')

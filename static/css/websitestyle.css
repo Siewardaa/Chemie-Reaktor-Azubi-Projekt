@@ -4,12 +4,10 @@
 */
 
 body {
-    max-width: 50em;
+    max-width: 100em;
     font-family: sans-serif;
     text-align: center;
-    background-color: #efefef;
-    border: thick solid #2458B7;
-    border-radius: 1em;
+    background-color: #00000;
     padding: 40px;
     margin: 10px auto;
 }
