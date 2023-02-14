@@ -1,13 +1,8 @@
 
 from flask import Flask
 from flask import render_template
-<<<<<<< HEAD
-#import RPi.GPIO as rpi
-=======
 import RPi.GPIO as GPIO
->>>>>>> cd1b053 (Test LED und Loadingsite)
 import time
-
 
 
 app= Flask(__name__)
@@ -15,11 +10,7 @@ app= Flask(__name__)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(35,GPIO.OUT)
 
-<<<<<<< HEAD
-#rpi.setwarnings(False)
-=======
 GPIO.setwarnings(False)
->>>>>>> cd1b053 (Test LED und Loadingsite)
 
 print("Done")
 
@@ -51,4 +42,4 @@ def Blau():
 
 if __name__=="__main__":
     print("Start")
-    app.run(debug=True) #,host='192.168.4.1')
+    app.run(debug=True) ,host='192.168.4.1')
